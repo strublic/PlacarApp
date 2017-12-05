@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PlacarApp</string>
+    <string name="label_titulo">Times</string>
+    <string name="desevolvido_por_gledson_strublic">Desevolvido por Gledson Strublic</string>
+    <string name="digite_o_nome_do_time">Digite o nome do time a casa</string>
+    <string name="time_1">Time da Casa</string>
+    <string name="time_visitante">Time Visitante</string>
+    <string name="digite_o_nome_do_visitante">Digite o nome do visitante</string>
+</resources>
