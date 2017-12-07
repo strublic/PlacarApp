@@ -6,4 +6,7 @@
     <string name="time_1">Time da Casa</string>
     <string name="time_visitante">Time Visitante</string>
     <string name="digite_o_nome_do_visitante">Digite o nome do visitante</string>
+    <string name="placar_inicial">0</string>
+    <string name="placar_gol">GOOOL !</string>
+    <string name="limpar_placar">Limpa TUDO!!!</string>
 </resources>

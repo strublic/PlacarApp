@@ -4,33 +4,73 @@
     android:id="@+id/activity_game"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context="br.com.fiap.placarapp.GameActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tvTimeCasa"
-            android:layout_weight="0.5"
-            android:gravity="center"
-            android:text="TIMECASA"/>
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/tvTimeCasa"
+                style="@style/titulo_placar"
+                tools:text="TIMECASA" />
+
+            <TextView
+                android:id="@+id/tvTimeVisitante"
+                style="@style/titulo_placar"
+                tools:text="TIMEVISITANTE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tvTimeVisitante"
-            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPlacarCasa"
+                style="@style/placar" />
+
+            <TextView
+                android:id="@+id/tvPlacarVisitante"
+                style="@style/placar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGolCasa"
+                style="@style/btn_placar"
+                android:onClick="golCasa" />
+
+            <Button
+                android:id="@+id/btnolVisitante"
+                style="@style/btn_placar"
+                android:onClick="golVisitante" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/accent"
             android:gravity="center"
-            android:text="TIMEVISITANTE"/>
+            android:text="@string/limpar_placar"
+            android:onClick="limparPlacar"/>
+
     </LinearLayout>
 
 </RelativeLayout>
